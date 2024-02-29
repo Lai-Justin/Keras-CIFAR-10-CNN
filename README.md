@@ -246,7 +246,3 @@ plt.show()
 
 From the confusion matrix of the true and predicted labels, it is clear that dogs were the class most often misclassified, followed by birds and then cats. By looking at the misclassifications, we can get an insight on some of the features from each class that the neural network might have picked up on and used to make a classification. For example, the model most often misclassified dogs as cats, which is understandable as they are both four-legged animals with similar body shapes. As well as this, the model also often misclassified airplanes to be birds, which could be due to their similarities of having wings, but it did not misclassify often in the other direction. Curiously, it also mixed up ships, trucks, automobiles, and airplanes, all of which are metallic man-made objects, This could be due to similar colors of each object. 
 
-
-```python
-
-```
