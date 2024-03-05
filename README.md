@@ -29,6 +29,8 @@ y_cat_train = to_categorical(y_train, 10)
 y_cat_test = to_categorical(y_test, 10)
 ```
 
+For this image classifier, I developed a simple neural network built upon three convolution layers, each with batch normalization and max pooling layers. This is followed by a dropout layer before the final output layer.
+
 
 ```python
 # Model
@@ -98,6 +100,8 @@ model.summary()
     _________________________________________________________________
     
 
+
+As for the hyperparameters of the neural network, I implemented categorical cross entropy for the loss function as it is known to do well on multi-class categorical deep learning such as this image classifier, Adam as the optimizer as it is known to quickly converge for convolutional neural networks, as well as using EarlyStopping in case the network converges well earlier than the set amount of epochs.
 
 ```python
 from keras.callbacks import ModelCheckpoint, EarlyStopping
